@@ -1,0 +1,3 @@
+--Making it so that the end_date does not need a vale since my current work experiences will be blank
+ALTER TABLE experiences 
+ALTER COLUMN end_date DROP NOT NULL; 
