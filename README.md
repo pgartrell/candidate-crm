@@ -40,6 +40,10 @@ The long-term vision includes:
 
 ✅ Contacts table
 
+✅ Experiences table
+
+✅ Resumes table
+
 ✅ Relational database design
 
 ## Next Milestone
