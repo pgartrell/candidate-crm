@@ -1,3 +1,0 @@
-UPDATE applications
-SET resume_id = 1
-WHERE application_id = 1
