@@ -1,3 +1,5 @@
-UPDATE applications
-SET resume_id = 1
-WHERE application_id = 1
+ALTER TABLE applications
+  ADD COLUMN resume_id BIGINT,
+  ADD CONSTRAINT applications_resume_foreign_key
+    FOREIGN KEY (resume_id)
+    REFERENCES resumes(resume_id);
