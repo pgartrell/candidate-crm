@@ -1,0 +1,153 @@
+-- ============================================================================
+-- Profile Details Seed Data
+--
+-- Stores reusable profile information used by the AI resume generator.
+-- This includes education, certifications, systems, and programming languages.
+-- ============================================================================
+
+BEGIN;
+
+-- ============================================================================
+-- Education & Certifications
+-- ============================================================================
+
+INSERT INTO profile_details (
+    profile_type,
+    profile_institution_name,
+    profile_institution_subject,
+    profile_institution_start_date,
+    profile_institution_end_date,
+    profile_degree_or_certification_level
+)
+
+VALUES
+(
+    'EDUCATION',
+    'Highline College',
+    'Legal Studies',
+    '2012-09-01',
+    '2014-06-01',
+    'Associate of Applied Science'
+),
+(
+    'CERTIFICATION',
+    'Nucamp Coding Bootcamp',
+    'Programming and Coding',
+    '2019-01-01',
+    '2020-01-01',
+    'Full Stack Web and Mobile Development'
+),
+(
+    'CERTIFICATION',
+    'Microsoft',
+    'Power BI Data Analytics',
+    '2026-06-01',
+    NULL,
+    'Microsoft Power BI Data Analyst Certification'
+);
+
+
+-- ============================================================================
+-- Systems / Software
+-- ============================================================================
+
+INSERT INTO profile_details (
+    profile_type,
+    profile_system_name
+)
+
+VALUES
+    -- CRM
+    ('SYSTEM', 'Redtail CRM'),
+    ('SYSTEM', 'HubSpot'),
+    ('SYSTEM', 'Zoho CRM'),
+
+    -- Wealth Management
+    ('SYSTEM', 'Black Diamond'),
+    ('SYSTEM', 'Morningstar Office'),
+    ('SYSTEM', 'Morningstar Direct'),
+    ('SYSTEM', 'eMoney Advisor'),
+    ('SYSTEM', 'Schwab Advisor Center'),
+    ('SYSTEM', 'DST Vision'),
+    ('SYSTEM', 'Lincoln Financial'),
+    ('SYSTEM', 'ArchiveIntel'),
+
+    -- Accounting / Business
+    ('SYSTEM', 'QuickBooks Online'),
+    ('SYSTEM', 'DocuSign'),
+    ('SYSTEM', 'Adobe Acrobat'),
+    ('SYSTEM', 'Brevo'),
+
+    -- Microsoft
+    ('SYSTEM', 'Microsoft 365'),
+    ('SYSTEM', 'Microsoft Excel'),
+    ('SYSTEM', 'Microsoft Word'),
+    ('SYSTEM', 'Microsoft PowerPoint'),
+    ('SYSTEM', 'Microsoft Outlook'),
+    ('SYSTEM', 'Microsoft Teams'),
+    ('SYSTEM', 'Microsoft SharePoint'),
+    ('SYSTEM', 'Microsoft OneDrive'),
+    ('SYSTEM', 'Microsoft Forms'),
+    ('SYSTEM', 'Microsoft Planner'),
+    ('SYSTEM', 'Microsoft Power Query'),
+
+    -- Business Intelligence
+    ('SYSTEM', 'Power BI'),
+    ('SYSTEM', 'Tableau'),
+
+    -- Development
+    ('SYSTEM', 'Supabase'),
+    ('SYSTEM', 'PostgreSQL'),
+    ('SYSTEM', 'Visual Studio Code'),
+    ('SYSTEM', 'Git'),
+    ('SYSTEM', 'GitHub'),
+    ('SYSTEM', 'Postman'),
+    ('SYSTEM', 'Docker'),
+
+    -- Project Management
+    ('SYSTEM', 'Jira'),
+    ('SYSTEM', 'Confluence'),
+    ('SYSTEM', 'Trello'),
+    ('SYSTEM', 'Asana'),
+    ('SYSTEM', 'Monday.com'),
+
+    -- IT Support
+    ('SYSTEM', 'Zendesk'),
+
+    -- Cloud
+    ('SYSTEM', 'AWS'),
+    ('SYSTEM', 'Google Cloud Platform'),
+
+    -- AI
+    ('SYSTEM', 'OpenAI'),
+    ('SYSTEM', 'ChatGPT'),
+    ('SYSTEM', 'GitHub Copilot');
+
+
+-- ============================================================================
+-- Programming Languages & Development Technologies
+-- ============================================================================
+
+INSERT INTO profile_details (
+    profile_type,
+    profile_programming_language
+)
+
+VALUES
+    ('PROGRAMMING_LANGUAGE', 'SQL'),
+    ('PROGRAMMING_LANGUAGE', 'PL/pgSQL'),
+    ('PROGRAMMING_LANGUAGE', 'Elixir'),
+    ('PROGRAMMING_LANGUAGE', 'Phoenix'),
+    ('PROGRAMMING_LANGUAGE', 'Ruby'),
+    ('PROGRAMMING_LANGUAGE', 'Ruby on Rails'),
+    ('PROGRAMMING_LANGUAGE', 'JavaScript'),
+    ('PROGRAMMING_LANGUAGE', 'TypeScript'),
+    ('PROGRAMMING_LANGUAGE', 'HTML'),
+    ('PROGRAMMING_LANGUAGE', 'CSS'),
+    ('PROGRAMMING_LANGUAGE', 'REST APIs'),
+    ('PROGRAMMING_LANGUAGE', 'GraphQL'),
+    ('PROGRAMMING_LANGUAGE', 'JSON'),
+    ('PROGRAMMING_LANGUAGE', 'XML'),
+    ('PROGRAMMING_LANGUAGE', 'YAML'),
+    ('PROGRAMMING_LANGUAGE', 'Bash'),
+    ('PROGRAMMING_LANGUAGE', 'PowerShell');
