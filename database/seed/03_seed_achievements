@@ -1,0 +1,623 @@
+-- ============================================================================
+-- Achievement seed data
+--
+-- Each achievement is connected to an experience by matching the exact
+-- company_name and job_title values stored in the experiences table.
+-- ============================================================================
+
+BEGIN;
+
+
+-- ============================================================================
+-- KCG Investment Advisory
+-- Senior Business Operations & Analyst
+-- ============================================================================
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Led the firmwide migration from Morningstar Office to Black Diamond, including platform configuration, data validation, reconciliation, vendor coordination, and workflow alignment.',
+    'Migrated 120+ client portfolios representing approximately $50M in assets.',
+    'System Implementation'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Managed and validated client portfolio datasets during the Morningstar-to-Black Diamond platform transition.',
+    'Reviewed 20+ Excel datasets containing more than 500 rows each and prevented an estimated 90-95% of potential integration errors and historical data loss.',
+    'Data Quality'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Created an Excel Power Query reporting pipeline that combined multiple datasets and calculated portfolio performance measures, including alpha, beta, trailing returns, and benchmark comparisons.',
+    'Eliminated recurring manual reporting preparation.',
+    'Workflow Automation'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Produced quarterly performance reports and analyzed asset allocation changes, performance drivers, and portfolio positioning.',
+    'Prepared reporting for approximately 50 clients.',
+    'Financial Analysis'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Automated recurring reporting and operational workflows to improve accuracy and reduce repetitive administrative work.',
+    'Improved data accuracy by approximately 25% and reduced manual effort by approximately 50%.',
+    'Process Improvement'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Designed a portfolio cash-threshold framework to support required minimum distribution liquidity while preserving investment exposure.',
+    'Established a 1% portfolio cash threshold.',
+    'Portfolio Operations'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Created standardized operating procedures for billing, reporting, compliance, and recurring operational processes.',
+    'Developed the firm''s first standardized SOP library in more than a decade.',
+    'Documentation'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Served as the primary internal operations contact for platform issues, translating advisor and compliance requirements into workflow improvements.',
+    'Supported operations across five enterprise financial platforms.',
+    'Stakeholder Management'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Performed quarterly portfolio performance reporting and attribution analysis, translating complex portfolio data into actionable client recommendations and identifying risk-profile misalignment caused by withdrawals.',
+    'Analyzed 30+ client portfolios and provided recommendations that informed portfolio strategy discussions during client reviews.',
+    'Portfolio Analysis'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Monitored portfolio allocation drift and benchmark performance, recommending against unnecessary short-term reallocations based on long-term investment objectives.',
+    'Recommendation contributed to portfolio performance exceeding custom benchmarks by approximately 0.5%-1.5% year-to-date.',
+    'Investment Analysis'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Designed and implemented a client onboarding tracking framework to monitor Black Diamond adoption and identify engagement gaps during the platform migration.',
+    'Tracked approximately 50 client onboarding activities, identified roughly 30% engagement gaps, and enabled targeted outreach to improve platform adoption.',
+    'Process Improvement'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Identified recurring security identifier mismatches within Morningstar exports and partnered with stakeholders to implement standardized CUSIP mapping and data-normalization processes.',
+    'Improved portfolio data quality and ensured accurate investment data migration into Black Diamond.',
+    'Data Quality'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Created the firm''s first standardized operating procedures and training documentation covering billing, portfolio rebalancing, user administration, and operational workflows.',
+    'Produced the first comprehensive SOP library in over 10 years, improving operational consistency and reducing employee training time.',
+    'Documentation'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Led advisor and client training sessions during the Black Diamond migration, providing platform demonstrations, onboarding guidance, and ongoing support.',
+    'Delivered 20+ training sessions that reduced onboarding friction and improved platform adoption.',
+    'Training and Change Management'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Developed a three-phase migration validation framework consisting of pre-validation, migration comparison, and post-migration reconciliation to verify portfolio accuracy during the Black Diamond implementation.',
+    'Improved migration quality while reducing the risk of portfolio data discrepancies across approximately 120 client portfolios.',
+    'System Implementation'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Leading the firm''s phased implementation of OpenAI to automate operational workflows by designing a secure deployment strategy based on least-privilege access, controlled data exposure, and incremental rollout of AI capabilities.',
+    'Established a governance framework that balances AI-driven automation with security and compliance while enabling future operational efficiencies.',
+    'AI Strategy'
+FROM experiences
+WHERE company_name = 'KCG Investment Advisory'
+  AND job_title = 'Senior Business Operations & Analyst';
+
+
+-- ============================================================================
+-- Hammer4Service LLC
+-- Co-Founder & Operations Manager
+-- ============================================================================
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Managed end-to-end delivery of residential renovation and maintenance projects, including scheduling, subcontractors, materials, budgets, and customer communication.',
+    'Coordinated approximately 10-20 active projects annually.',
+    'Project Management'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Developed standardized contracts, scopes of work, change orders, subcontractor agreements, estimates, and warranty documentation.',
+    'Standardized 100% of core project documentation, improving consistency and reducing administrative errors.',
+    'Operations'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Implemented project scheduling and customer communication processes that improved visibility across active jobs and subcontractors.',
+    'Reduced scheduling conflicts while managing multiple concurrent projects.',
+    'Project Coordination'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Built financial estimating workflows that produced consistent labor, material, and subcontractor pricing for residential renovation projects.',
+    'Prepared accurate estimates for projects ranging from small repairs to full bathroom remodels.',
+    'Financial Planning'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Designed repeatable operational workflows for customer intake, project execution, invoicing, and follow-up.',
+    'Reduced administrative time while improving the customer experience from estimate through project completion.',
+    'Process Improvement'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Created a marketing and lead-generation strategy using Google Business, Nextdoor, social media, and referral partnerships to grow the company''s customer base.',
+    'Established multiple recurring lead sources for the business.',
+    'Business Development'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Introduced standardized project-closeout procedures, including customer walkthroughs, warranty documentation, and final-payment collection.',
+    'Improved project consistency and customer satisfaction at project completion.',
+    'Customer Success'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Tracked business performance using project budgets, profitability, labor costs, and operating expenses to support informed decision-making.',
+    'Improved visibility into project profitability and business financial performance.',
+    'Business Analytics'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Negotiated with suppliers and subcontractors to balance project quality, scheduling, and cost while maintaining profitability.',
+    'Improved cost control across residential renovation projects.',
+    'Vendor Management'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Implemented digital tools to manage estimates, contracts, scheduling, invoices, and customer communication.',
+    'Reduced manual administrative work and improved project organization.',
+    'Digital Transformation'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Oversaw multiple projects simultaneously while coordinating subcontractors, deliveries, inspections, and customer expectations.',
+    'Successfully balanced competing priorities across active projects.',
+    'Operations Management'
+FROM experiences
+WHERE company_name = 'Hammer4Service LLC'
+  AND job_title = 'Co-Founder & Operations Manager';
+
+
+-- ============================================================================
+-- Allovue, now PowerSchool
+-- Software Engineer
+-- ============================================================================
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Developed and maintained backend services and APIs using Elixir, Phoenix, and PostgreSQL for a customer-facing financial management platform.',
+    'Supported a platform used by more than 200 school districts and thousands of education finance users.',
+    'Software Development'
+FROM experiences
+WHERE company_name = 'Allovue, now PowerSchool'
+  AND job_title = 'Software Engineer';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Investigated production issues, application defects, and financial data discrepancies using SQL while partnering with Product and Engineering teams to prioritize and resolve customer-impacting issues.',
+    'Improved platform reliability and reduced recurring customer-reported issues through data-driven troubleshooting.',
+    'Data Analysis'
+FROM experiences
+WHERE company_name = 'Allovue, now PowerSchool'
+  AND job_title = 'Software Engineer';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Translated customer needs into technical requirements by collaborating with Product, Engineering, QA, and Customer Success teams to deliver product enhancements.',
+    'Improved product functionality and supported stronger customer outcomes.',
+    'Cross-Functional Collaboration'
+FROM experiences
+WHERE company_name = 'Allovue, now PowerSchool'
+  AND job_title = 'Software Engineer';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Contributed to the migration of legacy services from Ruby on Rails to an Elixir and Phoenix architecture.',
+    'Supported application modernization, maintainability, and long-term scalability.',
+    'System Modernization'
+FROM experiences
+WHERE company_name = 'Allovue, now PowerSchool'
+  AND job_title = 'Software Engineer';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Created technical documentation, onboarding guides, and troubleshooting resources for engineers and support teams.',
+    'Improved onboarding, troubleshooting, knowledge transfer, and team consistency.',
+    'Documentation'
+FROM experiences
+WHERE company_name = 'Allovue, now PowerSchool'
+  AND job_title = 'Software Engineer';
+
+
+-- ============================================================================
+-- City of Savannah
+-- Technical Support / Project Management Assistant
+-- ============================================================================
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Created the organization''s first standardized operating procedures and technical training program for the IT department.',
+    'Mentored seven team members who delivered organization-wide technology training.',
+    'Documentation'
+FROM experiences
+WHERE company_name = 'City of Savannah'
+  AND job_title = 'Technical Support / Project Management Assistant';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Supported the citywide migration to Microsoft 365 by coordinating deployments, validating permissions, and delivering end-user training.',
+    'Supported migration across 30 departments and directly trained 10 departments consisting of approximately 10-30 users each.',
+    'System Implementation'
+FROM experiences
+WHERE company_name = 'City of Savannah'
+  AND job_title = 'Technical Support / Project Management Assistant';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Identified permission-migration failures during the Microsoft 365 rollout and implemented a validation process to improve user-access accuracy.',
+    'Validated migration results affecting approximately 500 users and reduced post-migration access issues.',
+    'Quality Assurance'
+FROM experiences
+WHERE company_name = 'City of Savannah'
+  AND job_title = 'Technical Support / Project Management Assistant';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Managed technical support requests across enterprise cloud and on-premises applications using Zendesk while troubleshooting system, configuration, and user-access issues.',
+    'Supported more than 50 applications while achieving approximately 80% first-call resolution.',
+    'Technical Support'
+FROM experiences
+WHERE company_name = 'City of Savannah'
+  AND job_title = 'Technical Support / Project Management Assistant';
+
+
+INSERT INTO achievements (
+    experience_id,
+    impact,
+    metrics,
+    category
+)
+SELECT
+    experience_id,
+    'Provided technical support across cloud and on-premises environments while maintaining service quality and operational continuity for city employees.',
+    'Supported daily technology operations across more than 50 enterprise applications.',
+    'IT Operations'
+FROM experiences
+WHERE company_name = 'City of Savannah'
+  AND job_title = 'Technical Support / Project Management Assistant';
+
+
+COMMIT;
